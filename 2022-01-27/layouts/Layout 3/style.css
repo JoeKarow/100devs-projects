@@ -1,0 +1,20 @@
+header,section,footer{
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+header,footer{
+    height:100px;
+    width: 100%;
+    clear:both;
+}
+section{
+    float:left;
+    height:400px;
+}
+.col15th {
+    width: 20%;
+
+}
+.col25th {
+    width: 40%;
+}
