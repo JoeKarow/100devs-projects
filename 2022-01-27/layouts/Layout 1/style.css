@@ -1,0 +1,23 @@
+header,footer{
+    height: 100px;
+    width: 100%;
+    clear:both;
+    border: 1px black solid;
+}
+*{
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.container section{
+    border: 1px black solid;
+}
+.colx3>section{
+    float: left;
+    width: 33.3333%;
+    height: 150px;
+}
+.colx2>section{
+    float:left;
+    width: 50%;
+    height: 200px;
+}
