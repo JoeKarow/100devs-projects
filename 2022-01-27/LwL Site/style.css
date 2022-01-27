@@ -23,7 +23,7 @@ h1 {
 }
 img{
     height: 300px;
-    /* float: right; */
+    float: right;
     display: inline-block;
     padding: 0px 0px 25px 25px;
 }
