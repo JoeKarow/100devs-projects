@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+header,footer{
+    height: 100px;
+    border: 3px solid black;
+    clear: both;
+}
+section{
+    height: 300px;
+    width: 50%;
+    border: 3px solid black;
+    float: left;
+}
+section.auxContent {
+    width: 25%;
+}
+h1 {
+    font-size: 4rem;
+}
+h2, h3 {
+    font-size: 3rem;
+}
+@media screen and (max-width: 350px){
+    header span{
+        content: "Bruh, it's time for an upgrade.";
+        color: red;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 450px){
+    section, section.auxContent {
+        width: 100%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2,h3 {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 451px) and (max-width: 1024px){
+    section.auxContent {
+        width: 50%;
+        background-color: lightslategrey;
+    }
+    section {
+        width: 100%;
+        background-color: aqua;
+    }
+    h2,h3 {
+        font-size: 2.5rem;
+    }
+}
