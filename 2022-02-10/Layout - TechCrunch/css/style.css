@@ -1,0 +1,153 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-color: rgba( 255, 255, 255, 100%);
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+li {
+  list-style: none;
+}
+.hamburgerMenu input{
+  display: none;
+}
+h1 {
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+}
+h2, p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.navList a {
+  color: #686c68;
+  width: 100%;
+}
+#mobileSearch{
+  display: none;
+}
+#toggle {
+  display: none;
+}
+.logo {
+  width: 70px;
+}
+.navList {
+  padding: 0;
+}
+nav {
+  padding-left: 20px;
+  padding-top: 20px;
+  line-height: 3rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+@media screen and (max-width: 500px){
+  nav{
+    width: 100%;
+    /* height: 50px; */
+    /* display: inline-block; */
+    padding-bottom: 10px;
+    border-bottom: 3px solid #5b878e;
+  }
+  .logo {
+    height: 30px;
+    /* width: auto; */
+    padding: 5px;
+    /* float: left; */
+  }
+  div.hamburgerMenu {
+    float: right;
+    /* position: right; */
+    height: 40px;
+  }
+  .hamburgerMenu span {
+    width: 40px;
+    padding: 5px;
+    border-bottom: 3px solid black;
+    display: block;
+    position: relative;
+    bottom: 5px;
+    left: 40px;
+  }
+  #toggle {
+    height: 40px;
+    width: 40px;
+    display: block;
+    z-index: 5;
+    opacity: 0;
+    float:right;
+  }
+  .navList {
+    display: none;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+  a.navList{
+    text-decoration: none;
+  }
+  #toggle:checked ~ .navList {
+    transform: translateX(0);
+    display: block;
+    /* float: right; */
+  }
+  img{
+    max-width: 80vw;
+  }
+  #fieldSearch {
+    display: none;
+  }
+  #mobileSearch {
+    display: block;
+  }
+}
+
+
+
+
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* .logo {
+  width: 70px;
+} */
