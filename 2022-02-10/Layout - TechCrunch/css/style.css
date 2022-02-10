@@ -16,6 +16,9 @@
 .clear {
 	clear: both;
 }
+/* * {
+  border: 1px solid red;
+} */
 
 /******************************************
 /* BASE STYLES
@@ -30,15 +33,22 @@ body {
 a {
   text-decoration: none;
   font-size: 1.8rem;
+  color: #777;
 }
+a:hover {
+  opacity: .6;
+  color: #777;
+}
+
+
 li {
   list-style: none;
 }
-.hamburgerMenu input{
+.hamburgerMenu {
   display: none;
 }
 h1 {
-  font-weight: 700;
+  font-weight: 800;
   color: black;
   font-size: 2rem;
 }
@@ -49,6 +59,7 @@ h2, p {
 .navList a {
   color: #686c68;
   width: 100%;
+  font-weight: 300;
 }
 #mobileSearch{
   display: none;
@@ -70,13 +81,23 @@ nav {
 /******************************************
 /* LAYOUT
 /*******************************************/
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
+  nav, section, .lowerStory div {
+    float:none !important;
+    width: 100% !important;
+  }
   nav{
     width: 100%;
     /* height: 50px; */
     /* display: inline-block; */
     padding-bottom: 10px;
     border-bottom: 3px solid #5b878e;
+  }
+  div.hamburgerMenu{
+    display: block;
+  }
+  .iconSearch {
+    display:none;
   }
   .logo {
     height: 30px;
@@ -131,11 +152,126 @@ nav {
   #mobileSearch {
     display: block;
   }
+  .navSeparator {
+    display: none;
+  }
+  section {
+  padding: 0 10px;
+  }
 }
 
 
+nav {
+  float: left;
+  width: 13%;
+  height: 100%;
+}
+.navList {
+  list-style: none;
+}
+.navSeparator {
+  width: 25px;
+  border-bottom: 1.5px solid #777;
+  margin: 15px 0;
+}
+.extraCrunch a{
+  font-weight: 700;
+  color: #fdc006;
+}
+.login a{
+  font-size: 1.5rem;
+}
+.hamburgerMenu {
+  display: none;
+}
+#fieldSearch {
+  margin-top: 25px;
+  border: none;
+   width: 80%;
+}
+input[type="search"] {
+  font-size: 1.8rem;
+}
+.iconSearch{
+  display: inline-block;
+  stroke: #777;
+  stroke-width: 1.5;
+  height: 1.8rem;
+  fill: transparent;
+}
+section.mainStory{
+  width: 53%;
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.mainStory h1{
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 5px 0;
+}
+.storyImage {
+  width: 100%;
+}
+.secondaryStories {
+  width: 33%;
+  display: inline-block;
+  float: right;
+}
+.secondaryStories h1 {
+  font-size: 2.5rem;
+}
+.secondaryStories li:not(:last-child){
+  border-bottom: 1px solid lightgrey;
+}
+.lowerStories {
+  width: 87%;
+  float: right;
+  padding: 0 30px;
+}
+.breakpoint {
+  font-size: 1.8rem;
+  font-weight:700;
+  padding: 15px 0;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  display: block;
+  /* margin: 0 30px; */
+}
+.lowerStory p {
+  font-size: 1.8rem;
+  color: #777;
+  font-weight: 400;
+}
+.lowerStory div {
+  display: inline-block;
+   width: 33%;
+   height: 100%;
+   margin-top: 15px;
+   vertical-align: top;
+   padding: 5px 10px;
+}
+.lowerStory div:first-child{
+  padding-left: 0;
+}
+.lowerStory h1 {
+  font-size: 2.5rem;
 
-
+}
+.author {
+  display: block;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.time, .date {
+  color: #777;
+}
+.time::after {
+  font-weight: 700;
+  content: " •";
+}
 
 header {
 
