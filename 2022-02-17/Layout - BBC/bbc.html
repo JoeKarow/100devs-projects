@@ -5,89 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBC.com</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="assets/signin.png"> Sign In</a></li>
-                <li><a href="#"><img src="assets/BBC_Logo.JPG"></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Reel</a></li>
-                <li><a href="#">Worklife</a></li>
-                <li><a href="#">Travel</a></li>
-                <li><a href="#">Future</a></li>
-                <li><a href="#">Culture</a></li>
-                <li><a href="#">More</a></li>
-                <li>
+        <nav class="">
+            <ul class="nav__bar">
+                <li class="nav__burgerMenu">
+                    <span class="nav__burgerMenu--line"></span>
+                    <span class="nav__burgerMenu--line"></span>
+                    <span class="nav__burgerMenu--line"></span>
+                </li>
+                <li class="nav__logo"><a href="#"><img src="assets/BBC_Logo.JPG"></a></li>
+                <li class="nav__item"><a href="#"><img src="assets/signin.png"> Sign In</a></li>
+                <li class="nav__item"><a href="#">Home</a></li>
+                <li class="nav__item"><a href="#">News</a></li>
+                <li class="nav__item"><a href="#">Sport</a></li>
+                <li class="nav__item"><a href="#">Reel</a></li>
+                <li class="nav__item"><a href="#">Worklife</a></li>
+                <li class="nav__item"><a href="#">Travel</a></li>
+                <li class="nav__item"><a href="#">Future</a></li>
+                <li class="nav__item"><a href="#">Culture</a></li>
+                <li class="nav__item"><a href="#">More</a></li>
+                <li class="nav__item">
                     <form action="" method="get">
                         <input type="search" name="search" id="search" placeholder="Search">
                     </form>
                 </li>
         </nav>
     </header>
-    <h1>Welcome to BBC.com</h1>
-    <span>Thursday, 13 August</span>
-    <section>
-        <div>
-            <a href="#"><img src="assets/Israel_UAE.jpg" alt="Leaders of Israel and UAE">
-            <h1>Israel and UAE strike historic peace deal</h1>
-            <p>Israel and the UAE agree to normalise relations, mnaking the third Israel-Arab peace deal.</p></a>
-            <a href="#"><span>MIDDLE EAST</span></a>
-        </div>
-        <div>
+    <h1 class="h1__welcome">Welcome to BBC.com</h1>
+    <span class="span__date">Thursday, 13 August</span>
+    <main class="main__stories">
+        <section class="section__story--main">
+            <a href="#">
+                <img src="assets/Israel_UAE.jpg" alt="Leaders of Israel and UAE">
+                <div class="section__story--overlay">
+                    <h1>Israel and UAE strike historic peace deal</h1>
+                    <p>Israel and the UAE agree to normalise relations, making the third Israel-Arab peace deal.</p></a>
+                    <a href="#"><span class="news__category">MIDDLE EAST</span></a>
+                </div>
+        </section>
+        <section class="section__story--secondary">
             <a href="#"><img src="assets/Tension_at_Canada_US_border.jpg" alt="American and Canadian Flags">
-            <h1>Americans, go home: Tension at Canada-US border</h1></a>
-            <a href="#"><span>CANADA</span></a>
-        </div>
-        <div>
+                <div class="section__story--overlay">
+                    <h1>Americans, go home: Tension at Canada-US border</h1></a>
+                    <a href="#"><span class="news__category">CANADA</span></a>
+                </div>
+        </section>
+        <section class="section__story--secondary">
             <a href="#"><img src="assets/vaccinate_seven_billion_people.jpg" alt="Scientist holding vaccine vial">
-            <h1>How will the world vaccinate seven billion people?</h1></a>
-            <a href="#"><span>HEALTH</span></a>
-        </div>
-        <div>
+            <div class="section__story--overlay">
+                <h1>How will the world vaccinate seven billion people?</h1></a>
+                <a href="#"><span class="news__category">HEALTH</span></a>
+            </div>
+        </section>
+        <section class="section__story--secondary">
             <a href="#"><img src="assets/online_productivity_gyms.jpg" alt="Woman at desk on using computer with headphones on">
-            <h1>The online 'productivity gyms'</h1></a>
-            <a href="#"><span>WORKLIFE</span></a>
-        </div>
-        <div>
-            <a href="#"><img src="assets/singer.jpg" alt="Man in chair sitting near guitar">
-            <h1>The folk singer murdered for his music</h1></a>
-            <a href="#"><span>CULTURE</span></a>
-        </div>
-    </section>
-    <section>
-        <h2>News</h2>
-        <div>
+            <div class="section__story--overlay">
+                <h1>The online 'productivity gyms'</h1></a>
+                <a href="#"><span class="news__category">WORKLIFE</span></a>
+            </div>
+        </section>
+        <section class="section__story--secondary">
+            <a href="#"><img src="https://picsum.photos/600/400" alt="Man in chair sitting near guitar">
+            <div class="section__story--overlay">
+                <h1>The folk singer murdered for his music</h1></a>
+                <a href="#"><span class="news__category">CULTURE</span></a>
+            </div>
+        </section>
+    </main>
+    <section class="section__story--bottom">
+        <h2 class="h2 news__category">News</h2>
+        <div class="section__story--threecol">
             <a href="#">
                 <img src="assets/Biden.JPG" alt="Vice President Harris and President Biden">
                 <h1>Biden and Harris say Trump has left US 'in tatters'</h1>
                 <p>Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader</p>
             </a>
             <a href="#">
-                <span>US ELECTION 2020</span>
+                <span class="news__category">US ELECTION 2020</span>
             </a>
         </div>
-        <div>
+        <div class="section__story--threecol">
             <a href="#">
                 <img src="assets/Belarus.JPG" alt="Belarussian women protesting in street">
                 <h1>Women form 'solidarity chains' in Belarus protests</h1>
                 <p>Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
             </a>
             <a href="#">
-                <span>EUROPE</span>
+                <span class="news__category">EUROPE</span>
             </a>
         </div>
-        <div>
+        <div class="section__story--threecol">
             <a href="#">
                 <img src="assets/Trump_Hair.JPG" alt="Trump having a bad hair day">
                 <h1>Trump says low-pressure shower heads won't wash</h1>
                 <p>The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
             </a>
             <a href="#">
-                <span>US & CANADA</span>
+                <span class="news__category">US & CANADA</span>
             </a>
         </div>
     </section>
