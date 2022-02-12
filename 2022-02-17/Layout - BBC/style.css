@@ -1,8 +1,11 @@
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
     font-family: sans-serif;
-    margin: 1rem 0;
+    margin: 0 1rem;
+}
+* {
+    box-sizing: border-box;
+    
 }
 a {
     text-decoration: none;
@@ -80,22 +83,23 @@ p {
     width: 100vw;
     max-width: 100vw;
 }
-.main__stories > section {
+.main__stories section {
     position:relative;
 }
 .section__story--overlay{
     z-index: 1;
-    width: calc(100% - 1rem);
-    float:left;
+    width: 100%;
+    /* float:left; */
     position:absolute;
     bottom: 0;
     left: 0;
-    padding: 0.5rem;
+    /* right: 0.5rem; */
+    padding: 0 0.5rem 0.5rem 0.5rem;
     background: linear-gradient(to top, 
         hsla(0 0% 0% / 90%), 
         75%, /* <color-hint> */
         hsla(0 0% 0% / 0)
-    );  
+    ) border-box;  
 }
 .section__story--overlay * {
     color: white;
@@ -116,4 +120,97 @@ p {
 .section__story--threecol {
     padding: 0.5rem 0 0.5rem 0.5rem;
     width: 100%;
+}
+
+/* ========================================
+           Desktop version
+   ======================================== */
+
+@media screen and (min-width: 769px) {
+    html {
+        /* box-sizing: border-box; */
+        margin: 0;
+    }
+    .nav__burgerMenu {
+        display:none;
+    }
+    .nav__item--signin img {
+        height: 100%;
+    }
+    .nav__item {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 3em;
+        padding: 0 2rem;
+        border-left: 1px solid grey;
+        float: left;
+        width: 6.5%;
+    }
+    .nav__logo{
+        width: 8.75%;
+    }
+    .nav__item--signin{
+        width: 13.75%;
+    }
+    .nav__item--more {
+        width: 11%;
+    }
+    .nav__item a {
+        color: white;
+        /* height: 100%; */
+        /* line-height:normal; */
+    }
+
+    .main__stories{
+        width: 100%;
+        float:left;
+        margin-bottom: 4rem;
+    }
+    .main__stories::after{
+        /* clear:both; */
+    }
+    .section__story--main {
+        width: 50%;
+        padding: 0.5rem;
+        float: left;
+    }
+    .div__quadstory {
+        width: 50%;
+        max-height: 100%;
+        float:right;
+        padding: 0 0 0 0.5rem;
+    }
+    .div__quadstory h1 {
+        font-size: 1.7rem;
+    }
+    .section__story--overlay {
+        background-clip:  content-box;
+    }
+    .section__story--overlay :is(h1, span, p) {
+        padding: 0 0.5rem;
+    }
+    .section__story--secondary {
+        width: 50%;
+        max-height: 50%;
+        float: left;
+        padding: .5rem;
+    }
+    .section__story--bottom {
+        width: 100%;
+        clear: both;
+        padding: 0;
+    }
+    .section__story--threecol {
+        width: 33.3333%;
+        float: left;
+        padding: 0 0.5rem;
+    }
+    .section__story--threecol * {
+        width: 100%;
+    }
+    .section__story--threecol h1 {
+        font-weight: 600;
+    }
+
 }
