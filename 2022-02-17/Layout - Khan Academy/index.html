@@ -5,40 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khan Academy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="cleafix">
         <nav>
-            <ol>
-                <li>
-                    <a href="#">Courses</a>
-                </li>
-                <li>
-                    <form action="GET">
-                        <input type="search" name="search" id="search" placeholder="Search">
-                    </form>
-                </li>
-                <li>
-                    <a href="#main">
-                        <img src="logo.png" alt="Khan Academy Logo">
-                        <h1>Khan Academy</h1>
-                    </a>
-                </li>
-                <li><a href="#">Donate</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
-            </ol>
+            <ul class="nav__bar">
+                <div>
+                    <li>
+                        <a href="#" class="nav__item--text">Courses</a>
+                    </li>
+                    <li>
+                        <form action="GET">
+                            <input type="search" name="search" id="search" placeholder="Search">
+                        </form>
+                    </li>
+                </div>
+                <div class="nav__logo">
+                    <li>
+                        <a href="#main">
+                            <img src="logo.png" alt="Khan Academy Logo">
+                            <h1 class="nav__item--text">Khan Academy</h1>
+                        </a>
+                    </li>
+                </div>
+                <div>
+                    <li><a href="#" class="nav__item--text">Donate</a></li>
+                    <li><a href="#" class="nav__item--text">Login</a></li>
+                    <li><a href="#" class="nav__item--text">Signup</a></li>
+                </div>
+            </ul>
         </nav>
     </header>
-    <section>
+    <section class="section__img">
         <img src="main.jpg" alt="Students learning.">
     </section>
-    <section>
+    <section class="section__intro">
         <h1>For every student, every classroom.</h1>
         <h1>Real results.</h1>
         <h2>We're a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</h2>
     </section>
-    <section>
+    <section class="section__audience">
         <ul>
             <li><a href="#learners">Learners</a></li>
             <li><a href="#teachers">Teachers</a></li>
@@ -46,8 +53,6 @@
             <li><a href="#parents">Parents</a></li>
         </ul>
     </section>
-    <section>
-        <h4>Why Khan Academy works</h4>
-    </section>
+
 </body>
 </html>
