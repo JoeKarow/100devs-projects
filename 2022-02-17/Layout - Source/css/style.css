@@ -25,14 +25,20 @@ html {
   font-family: 'Open Sans', sans-serif;
   color: rgba( 53, 68, 83, 100%);
 }
+a {
+  text-decoration: none;
+  color: rgba( 57, 74, 91, 100%);
+}
 header, main {
   background-color: rgba( 244, 248, 252, 100%);
   margin: 0;
   padding: 0;
   width: 100%;
 }
-body {
-
+p {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-weight: 500;
 }
 
 
@@ -103,6 +109,7 @@ main{
   background-color: rgba( 225, 232, 239, 100%);
   padding-left: 1rem;
   font-weight: 600;
+  opacity: .75;
 }
 #tagline__btn {
   width: 100%;
@@ -114,11 +121,6 @@ main{
   font-weight: 700;
   margin-top: 1rem;
 }
-.section__tagline p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2rem;
-}
 .img__scalable{
   max-width: 100vw;
   position: relative;
@@ -127,10 +129,58 @@ main{
 /* #region - Feature List */
 
 
+.section__feature, .section__feature * {
+  padding: .5rem;
+}
+.section__feature i {
+  font-size: 2.5rem;
+}
+.section__feature h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.section__feature a {
+  display: block;
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.section__feature a:after {
+  content: " >";
+}
 
 /* #endregion */
 /* #endregion */
+/* #region - Lower section */
+.section__collecting-info {
+  background-color: rgba( 255, 255, 255, 100%);
+  padding: 3.5rem 1.75rem;
+}
+.h2__large {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.section__collecting-info p{
+  padding: 2rem 0;
+  color: rgba( 134, 150, 166, 100%);
+}
+
+
+
+
 /* #endregion */
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+/* #endregion */
+
+/* #region - RESPONSIVE - 600+px */
+@media (min-width: 600) {
+
+  
+  
+}
+
+
+
+
+
+/* #endregion */
