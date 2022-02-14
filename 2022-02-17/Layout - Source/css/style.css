@@ -20,23 +20,117 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba( 53, 68, 83, 100%);
+}
+header, main {
+  background-color: rgba( 244, 248, 252, 100%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 body {
 
 }
 
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
+/* #region - INITIAL/MOBILE LAYOUT */
+/* #region - Header/Nav bar */
+header{
+  border-bottom: 0.1rem solid rgba( 224, 227, 233, 100%);
 }
-
-footer {
-
+nav {
+  width: 100%;
+  display: inline;
 }
+nav * {
+  margin:0;
+}
+.nav__list {
+  display: none;
+}
+.burgerMenu {
+  font-size: 2rem;
+  padding: 1rem;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+.h1__logo{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0;
+  /* float: left; */
+  position: relative;
+  top: 0;
+  left: -1.875rem;
+  z-index: 1;
+  /* width: 100%; */
+}
+/*  #endregion */
+/* #region - Main section */
+main{
+  padding: 2rem 1.25rem;
+  overflow: hidden;
+}
+.section__tagline *{
+  padding: 1rem 1.25rem;
+}
+.section__tagline h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba( 143, 154, 164, 100%);
+  /* padding: 1rem 0; */
+}
+.section__tagline h1 {
+  /* padding: 1rem 0; */
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  /* letter-spacing: 0.1rem; */
+}
+.section__tagline form {
+  padding: 2rem 1rem;
+}
+#tagline__field {
+  width: 100%;
+  max-width: 35rem;
+  border: none;
+  background-color: rgba( 225, 232, 239, 100%);
+  padding-left: 1rem;
+  font-weight: 600;
+}
+#tagline__btn {
+  width: 100%;
+  max-width: 35rem;
+  border: none;
+  background-color: rgba( 53, 70, 87, 100%);
+  color: rgba( 215, 222, 226, 100%);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.section__tagline p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.img__scalable{
+  max-width: 100vw;
+  position: relative;
+  right: -0.5rem;
+}
+/* #region - Feature List */
 
+
+
+/* #endregion */
+/* #endregion */
+/* #endregion */
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
