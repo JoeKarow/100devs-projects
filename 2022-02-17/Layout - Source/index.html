@@ -17,26 +17,28 @@
 	</head>
 	<body>
 		<header>
-			<nav class="clearfix">
+			<nav>
 				<div class="burgerMenu"><i class="fa-solid fa-bars"></i></div>
 				<h1 class="h1__logo">Source</h1>
 				<ul class="nav__list">
-					<li>Link 1</li>
-					<li>Link 2</li>
-					<li>Link 3</li>
-					<li>Link 4</li>
-					<form action="#" method="get"><input type="button" value="Button"></form>
+					<li class="nav__item">Link 1</li>
+					<li class="nav__item">Link 2</li>
+					<li class="nav__item">Link 3</li>
+					<li class="nav__item">Link 4</li>
 				</ul>
+				<form action="#" method="get" class="nav__list"><input type="button" value="Button" class="style__button nav__list"></form>
 			</nav>
 		</header>
 		<main>
-			<section class="section__tagline">
-				<h2>Tagline</h2>
-				<h1>Source helps creators do more of what they love</h1>
-				<form action="#" method="get"><input type="text" name="placeholder" id="tagline__field" placeholder="Placeholder"><input type="button" value="Button" id="tagline__btn"></form>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quod aspernatur dolorem ipsam rem quos, odit dicta earum!</p>
-			</section>
-			<img src="laptop-phone.png" alt="Minimalist drawing of a laptop and mobile phone" class="img__scalable">
+			<div class="wrapper__intro">
+				<section class="section__tagline">
+					<h2>Tagline</h2>
+					<h1>Source helps creators do more of what they love</h1>
+					<form action="#" method="get"><input type="text" name="placeholder" id="tagline__field" placeholder="Placeholder"><input type="button" value="Button" id="tagline__btn" class="style__button"></form>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quod aspernatur dolorem ipsam rem quos, odit dicta earum!</p>
+				</section>
+				<img src="laptop-phone.png" alt="Minimalist drawing of a laptop and mobile phone" class="img__scalable">
+			</div>
 			<div class="wrapper">
 				<section class="section__feature">
 					<i class="fa-regular fa-face-flushed"></i>
@@ -64,10 +66,12 @@
 				</section>
 			</div>
 		</main>
-		<section class="section__collecting-info">
-			<h2 class="h2__large">Collecting information about the problem</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ratione architecto aperiam tempora doloremque velit reprehenderit id cum quidem rerum quis beatae natus, sint vero quae facilis quaerat consequatur harum?</p>
-		</section>
+		<div class="wrapper">
+			<section class="section__collecting-info">
+				<h2 class="h2__large">Collecting information about the problem</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ratione architecto aperiam tempora doloremque velit reprehenderit id cum quidem rerum quis beatae natus, sint vero quae facilis quaerat consequatur harum?</p>
+			</section>
+		</div>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
