@@ -100,13 +100,11 @@ nav {
 /* #region - TOP FOLD */
 .section__topfold {
   width: 100%;
-  
   background: center / cover no-repeat url("../assets/top-bg.jpg");
-  /* height: 80vh; */
   display: flex;
   flex-direction: column;
   padding: 0 40% 30% 10%;
-  border-radius: 0 0 20% 0%;
+  border-radius: 0 0 30% 0%;
 }
 .section__topfold * {
   max-width: 31.5rem;
@@ -208,7 +206,55 @@ h2.section__tagline {
 }
 /* #endregion */
 
+/* #region - TOP INFO */
 
+.section__topinfo {
+  background-color: rgba( 243, 243, 246, 100%);
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.section__topinfo div {
+  width: 40%;
+  max-width: 35rem;
+  padding: 0 5rem;
+}
+
+
+.section__topinfo h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 500;
+}
+.section__topinfo p {
+  padding: 3rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+}
+.section__topinfo .btn__dash  {
+  margin-top: 2rem;
+}
+
+.section__topinfo img {
+  width: 40%;
+  max-width: 35rem;
+  object-fit: cover;
+  text-align: center;
+}
+
+
+
+/* #endregion */
+
+/* #region - PORTRAITS */
+
+
+
+
+
+/* #endregion */
 
 
 
