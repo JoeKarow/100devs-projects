@@ -310,6 +310,42 @@ h2.section__tagline {
 }
 /* #endregion */
 
+/* #region - OFFER */
+
+.section__offer {
+  margin: 2rem auto;
+  background:center / cover no-repeat url("../assets/offer.jpg");
+  height: 25rem;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5rem 1.5rem;
+}
+.section__offer div {
+  max-width: 19rem;
+}
+.section__offer h2, .section__offer div span {
+  text-transform: uppercase;
+}
+.section__offer h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.section__offer div span+span{
+  font-size: 1.7rem;
+}
+
+
+/* #endregion */
+
+
+
+
+
+
+
+
 
 
 footer {
