@@ -347,8 +347,35 @@ span.span__large {
 /* #endregion */
 
 /* #region - SECTION FIVE */
+.section__five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba( 229, 231, 237, 100%);
+}
 
+.section__five img {
+  border-radius: 50%;
+  width: 15rem;
+  margin: 2rem 0;
+}
+.span__small {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+div.stars {
+  color: rgba( 239, 141, 51, 100%);
+  font-size: 1.75rem;
+  margin: 2rem 0;
+}
 
+.section__five p {
+  max-width: 70rem;
+  font-style: italic;
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
 
 
 /* #endregion */
