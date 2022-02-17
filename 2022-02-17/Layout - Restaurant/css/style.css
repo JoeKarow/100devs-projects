@@ -82,6 +82,9 @@ section {
   width: 50%;
   max-width: 70rem;
 }
+.span__large {
+  font-size: 3rem;
+}
 
 /******************************************
 /* LAYOUT
@@ -284,6 +287,68 @@ span.orderButton {
   color: white;
   opacity: 100% !important;
 }
+
+
+/* #endregion */
+
+/* #region - SECTION FOUR */
+
+.dim__bg {
+  background: center / cover no-repeat url("../assets/bg3.jpg");
+  opacity: .1;
+  position:absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+.section__four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.section__four i, .section__four a {
+  font-size: 3rem;
+  color: rgba( 239, 141, 51, 100%);
+  padding: 1.5rem 0;
+}
+.section__four a {
+  font-weight: 500;
+}
+.section__four span {
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem 5rem;
+}
+/* .wrapper_hours {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+} */
+
+.wrapper__hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* text-align: center ; */
+}
+
+
+span.span__large {
+  font-size: 3rem;
+}
+
+
+
+/* #endregion */
+
+/* #region - SECTION FIVE */
+
+
 
 
 /* #endregion */
