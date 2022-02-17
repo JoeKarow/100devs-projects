@@ -40,19 +40,48 @@ img{
 
 
 
-
 /******************************************
-/* BASE STYLES
+/* SHARED STYLES
 /*******************************************/
 
 h1 {
   font-size: 7rem;
+  line-height: 8rem;
+  padding: 3rem 0;
+  width:fit-content;
+}
+h1 span {
+  display: block;
+}
+h2 {
+  font-size: 2.5rem;
+  color: rgba( 241, 162, 74, 100%);
+}
+p {
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  text-align: justify;
+}
+.div__btn {
+  background-color: rgba( 239, 141, 51, 100%);
+  width: fit-content;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 3rem 0;
+}
+.div__btn * {
+  color: white;
+  padding: 1.75rem 1.5rem;
+}
+section {
+  padding: 8rem 10%;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  max-width: 70rem;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -93,19 +122,13 @@ nav a:hover {
 /* #region - SECTION ONE */
 .section__one {
   background: top / cover no-repeat url("../assets/bg1.jpg");
-  padding: 20rem 0 0 8rem;
+  padding-top: 12rem;
 }
 .section__one .wrapper {
   max-width: 50rem;
 }
-.section__one h1 {
-  line-height: 8rem;
-  padding: 3rem 0;
-  width:fit-content;
-}
-.section__one h1 span {
-  display: block;
-}
+
+
 
 .section__one form {
   display: flex;
@@ -159,7 +182,29 @@ nav a:hover {
 
 /* #endregion */
 
+/* #region - SECTION TWO */
 
+.section__two {
+  background: center / cover no-repeat url("../assets/bg2.jpg");
+  display: flex;
+  justify-content: flex-end
+;
+}
+.div__btn i {
+  margin-left: 1rem;
+  padding: 1.5rem;
+  background-color: rgba( 242, 173, 94, 100%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.div__btn a {
+  padding-right: 0;
+}
+.section__two .wrapper {
+  margin-right: 9rem;
+}
+
+
+/* #endregion */
 
 
 
