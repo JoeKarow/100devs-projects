@@ -26,8 +26,11 @@ function check() {
   else if (dayBoring.includes(dayInput)) {
     message = 'Ugh - it\'s a BORING day'
   }
+  else if (dayInput.includes('day')) {
+    message = 'Uhh - that\'s not even a real day!';
+  }
   else {
-    message = 'Bruh - that\'s not even a real day!';
+    appOutput();
   }
   appOutput(message);
 }
