@@ -3,8 +3,21 @@ document.getElementById('green').onclick = partyGreen
 document.getElementById('blue').onclick = partyBlue
 document.getElementById('red').onclick = partyRed
 
-// const audio = new Audio('airhorn.mp3');
-const audio = new Audio('hq-explosion-6288.mp3');
+const airhorn = new Audio('airhorn.mp3');
+const boom = new Audio('hq-explosion-6288.mp3');
+
+// janky audio player function
+var nowPlaying = new Audio();
+let clip
+function player(clip) {
+  if (!clip) {
+    return;
+  }
+  nowPlaying.pause();
+  nowPlaying.currentTime = 0;
+  nowPlaying = clip;
+  nowPlaying.play();
+}
 
 
 function partyPurple() {
@@ -25,7 +38,7 @@ function partyRed() {
   document.querySelector('body').style.backgroundColor = 'red'
   document.querySelector('body').style.color = 'white'
   initConfetti();
-  audio.play();
+  player(boom);
 }
 
 
