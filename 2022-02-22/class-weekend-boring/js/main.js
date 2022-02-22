@@ -6,6 +6,7 @@ function check() {
   const dayClass = ['tuesday', 'thursday'];
   const dayWeekend = ['saturday', 'sunday'];
   const dayBoring = ['monday', 'wednesday', 'friday'];
+  const cheer = new Audio('cheer.wav');
   let message;
   console.log(dayInput);
   console.log(dayClass);
@@ -19,6 +20,7 @@ function check() {
   if (dayClass.includes(dayInput)) {
     message = 'Today is a LEON day!'
     initConfetti();
+    player(cheer);
   }
   else if (dayWeekend.includes(dayInput)) {
     message = 'It\'s the freakin\' weekend!'
@@ -39,6 +41,23 @@ function appOutput(message='You wanna try that again?') {
   document.querySelector('#placeToSee').textContent=message;
   console.log('Output: ' + message)
 }
+
+
+// janky audio player function
+var nowPlaying = new Audio();
+let clip
+function player(clip) {
+  if (!clip) {
+    return;
+  }
+  nowPlaying.pause();
+  nowPlaying.currentTime = 0;
+  nowPlaying = clip;
+  nowPlaying.play();
+}
+
+
+
 
 
 
